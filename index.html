@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-End Developer</p>
+            <h1>Hi, I'm <span>Sarthak Tomar</span><br> From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi, I'm Sarthak Tomar, a passionate and dedicated front-end developer currently pursuing a Bachelor of Computer Applications (BCA). I have successfully completed four semesters of my BCA program, which has equipped me with a strong foundation in computer science and programming.
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS</span><br>HTML:Structure of the web page CSS: Styling and Layout</li>
+                        <li><span>JAVASCRIPT</span><br>CORE JAVASCRIPT: For dynamic content and interactive features.</li>
+                        <li><span>FRAMEWORKS/LIBRARIES</span><br>React,Angular and Vue.js</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Training at () as a Front-End Developer</li>
+                        <li><span>2022-2025</span><br>Pursuing a Bachelor of Computer Applications (BCA) at Maa Sakumbari University, Saharanpur</li>
+                        <li><span>2021-2022</span><br>12<sup>th</sup> with PCM From KIS Gangoh </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Designing and Developing User Interfaces (UIs)</h2>
+                <p>Creating visually appealing and user-friendly interfaces using HTML, CSS, and JavaScript.</p>
+                <a href="https://www.geeksforgeeks.org/user-interface-ui/">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Implementing Responsive Design</h2>
+                <p> Ensuring websites and applications look and function well on a variety of devices and screen sizes.</p>
+                <a href="https://www.geeksforgeeks.org/responsive-web-design/">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Optimizing Performance</h2>
+                <p> Improving the loading speed and overall performance of web pages to enhance user experience.</p>
+                <a href="https://www.geeksforgeeks.org/code-optimization-in-compiler-design/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p> I Have Create a personal portfolio website to showcase  skills, projects, and experience. Include sections like About Me, Projects, Blog, and Contact.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p> i Have Developed a simple e-commerce website with product listings, a shopping cart, and a checkout process.Features like product search, filtering, and user authentication.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Interactive Data Dashboard</h3>
+                    <p>I Have Build a data visualization dashboard that displays various charts and graphs based on user inputs or data from an API.For Ex. weather statistics, financial data, or social media metrics.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="C:\Users\hp\Desktop\Personal-portfolio\see.html" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/jyzHAb6Ca9RJovNv/"><i><img src="images/facebook.png" alt="FB" class="facebook"></i></a>
+                    <a href="https://x.com/SarthakT2111/status/1813874994805698707"><i><img src="images\twitter.png" alt="Twitter" class="twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sarthak-gurjar-2213ba311"><i><img src="images/linkedin.png" alt="LinkedIn" class="linkedin"></i></a>
+                    <a href="https://github.com/Sarthak-Tomar21/LocalRepo.git"><i><img src="images/github.png" alt="GitHub" class="github"></i></a>
+                    <a href="https://www.instagram.com/5911_sarthak_gurjar?igsh=MXBwdXpzaW04ZHBxMw=="><i><img src="images/instagram.png" alt="IG" class="instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sarthak Tomar.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtWHRyNvN7DxwSfY5wvUTGTmfd_St7urS7ZtbFr7St1uI8AHQ1yWYNyTKmr6DD8Ij6uw/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
