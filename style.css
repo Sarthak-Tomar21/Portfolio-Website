@@ -34,6 +34,9 @@ nav{
     width: 140px;
 }
 
+
+
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -291,7 +294,12 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
+    transition: transform 0.3s ease; 
 }
+.btn.btn2:hover{
+    transform: scale(0.85);
+}
+
 .contact-right form{
     width: 100%;
 }
@@ -326,21 +334,6 @@ form .btn2{
 .copyright a{
     color: #ff004f;
     text-decoration: none;
-}
-.facebook{
-    width: 20px;
-}
-.twitter{
-    width: 20px;
-}
-.linkedin{
-    width: 20px;
-}
-.github{
-    width: 20px;
-}
-.instagram{
-    width: 20px;
 }
 
 /* -----------------css for small screens--------- */
