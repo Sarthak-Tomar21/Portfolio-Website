@@ -41,7 +41,7 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>
-                    Hi, I'm Sarthak Tomar, a passionate and dedicated front-end developer currently pursuing a Bachelor of Computer Applications (BCA). I have successfully completed four semesters of my BCA program, which has equipped me with a strong foundation in computer science and programming.
+                       Junior Frontend Developer | Crafting sleek, user-friendly websites with a creative touch. BCA graduate and tech enthusiast.
                     </p>
 
                 <div class="tab-titles">
@@ -51,25 +51,32 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>HTML/CSS</span><br>HTML:Structure of the web page CSS: Styling and Layout</li>
-                        <li><span>JAVASCRIPT</span><br>CORE JAVASCRIPT: For dynamic content and interactive features.</li>
-                        <li><span>FRAMEWORKS/LIBRARIES</span><br>React</li>
-                        <li><span>PROGRAMMING LANGUAGES</span><br>C,C++,Java (Basics)</li>
+                        <li><span>💻 Web Development</span><br>Skilled in HTML, CSS, and JavaScript for building clean, responsive, and user-friendly websites. Basic knowledge of web layout, media queries, and DOM manipulation.</li>
+                        <li><span>🎨 UI Design Basics</span><br>Comfortable with designing simple and elegant user interfaces. I focus on creating layouts that are both functional and visually appealing.
+
+</li>
+                        <li><span>🛠️ Tools & Technologies</span><br>Experienced with VS Code, GitHub, and Chrome DevTools for efficient coding and debugging. Familiar with Microsoft Office (Word, Excel, PowerPoint) for documentation and presentations.</li>
+                        <li><span>🚀 Learning & Growth</span><br>Actively learning responsive design, JavaScript interactivity, and improving skills in frontend performance optimization. Open to new technologies and frameworks.
+
+</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>CURRENTLY</span><br>Front-End Developer at () for Training</li>
-                        <li><span>PROJECT USING HTML,CSS,JS</span><br>Make Almost 30 Projects using Html,Css,JS</li>
-                        <li><span>FIGMA TO HTML</span><br>2 to 3 Projects done of Figma To Html</li>
-                        <li><span>PROJECTS USING HTML,CSS</span><br>100's Of Projects Done Using Html,Css</li>
+                        <li><span>🧑‍💻 Fresher Developer</span><br>Learning by building personal projects using HTML, CSS, and JavaScript.</li>
+                        <li><span>💼 Practical Learning</span><br>Created basic websites and UI layouts during self-practice and college projects.</li>
+                        <li><span>🚀 Self-Learning</span><br>Improving frontend skills through online tutorials and coding exercises.</li>
+                        <li><span>🎓 Academic Exposure</span><br>Completed BCA with hands-on practice in web development basics.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2024</span><br>Training at () as a Front-End Developer</li>
-                        <li><span>2022-2025</span><br>Pursuing a Bachelor of Computer Applications (BCA) at Maa Sakumbari University, Saharanpur</li>
-                        <li><span>2021-2022</span><br>12<sup>th</sup> with PCM From KIS Gangoh </li>
+                        <li><span>🎓 Bachelor of Computer Applications (BCA)</span><br>Maa Shakumbhari University, Saharanpur (MSU)
+2022 – 2025 | Scored: 67% (6th Semester Result Awaited)</li>
+                        <li><span>🏫 Senior Secondary (12th – PCM, CBSE)</span><br>Krishna International School, Gangoh
+2021 – 2022 | Scored: 81.4%</li>
+                        <li><span>🏫 Secondary (10th – CBSE)</span><br>Krishna International School, Gangoh
+2019 – 2020 | Scored: 88% </li>
                     </ul>
                 </div>
             </div>
@@ -164,7 +171,9 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Sarthak Tomar.</p>
+        <p>© 2025 Sarthak Tomar. All Rights Reserved.
+
+</p>
     </div>
 </div>
 
@@ -201,22 +210,34 @@
 
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtWHRyNvN7DxwSfY5wvUTGTmfd_St7urS7ZtbFr7St1uI8AHQ1yWYNyTKmr6DD8Ij6uw/exec' // add your own app script link here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxlUfKi-47KiIqoF5n0dewKBbDfBaRMI7Oo8ZwRG2oXyE69okYdFx__YdXU5nhiE2Mw/exec' 
     const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "✅ Message sent successfully!"
+      msg.classList.add("show")
+      setTimeout(function(){
+        msg.classList.remove("show")
+        msg.innerHTML = ""
+      }, 5000)
+      form.reset()
     })
+    .catch(error => {
+      msg.innerHTML = "❌ Failed to send message. Try again!"
+      msg.style.backgroundColor = "#f8d7da"
+      msg.style.color = "#721c24"
+      msg.style.border = "1px solid #f5c6cb"
+      msg.classList.add("show")
+      setTimeout(function(){
+        msg.classList.remove("show")
+        msg.innerHTML = ""
+      }, 5000)
+    })
+})
   </script>
 </body>
 </html>
